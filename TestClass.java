@@ -41,7 +41,6 @@ public class TestClass {
         public boolean equals(Object o) {
             if (o == this) return true;
             if (!(o instanceof Screen)) return false;
-            if (o == null) return false;
 
             Screen s = (Screen) o;
             return (s.id == null ? this.id == null : s.id.equals(this.id));
